@@ -1,0 +1,89 @@
+<KONTO>
+    <BEZEICHNUNG>Bezeichnung Testkonto #1</BEZEICHNUNG>
+    <KONTOART>Girokonto</KONTOART>
+    <IBAN>DE02100500000054540402</IBAN>
+    <BIC>BELADEBE</BIC>
+    <KONTONR>0054540402</KONTONR>
+    <BLZ>10050000</BLZ>
+    <BANKNAME>Landesbank Berlin - Berliner Sparkasse</BANKNAME>
+    <WAEHRUNG>EUR</WAEHRUNG>
+    <KONTOSTAND>-1,00</KONTOSTAND>
+    <KONTOBUCH>
+        <BUCHUNG>
+            <DATUM>01.02.24</DATUM>
+            <EMPFAENGER>
+                <NAME>Testempfänger 3</NAME>
+                <BIC>SSKMDEMM</BIC>
+                <IBAN>DE02701500000000594937</IBAN>
+                <BANKNAME>Stadtsparkasse München</BANKNAME>
+            </EMPFAENGER>
+            <ZWECK>EndtoEnd: 123456789012345678  Mandatsref.: 9012345678XY90  Creditor-ID: DE12ABC34567890123  Dies ist der Buchungstext</ZWECK>
+            <BETRAG>20,00</BETRAG>
+            <WAEHRUNG>EUR</WAEHRUNG>
+            <KATEGORIE>Lohn/Gehalt/Steuer</KATEGORIE>
+            <QUELLE>0</QUELLE>
+        </BUCHUNG>
+        <BUCHUNG>
+            <DATUM>02.02.24</DATUM>
+            <EMPFAENGER>
+                <NAME>Split Empfänger</NAME>
+                <ZUSATZ>Zusatz 2</ZUSATZ>
+                <BIC>PBNKDEFF</BIC>
+                <IBAN>DE02100100100006820101</IBAN>
+                <BANKNAME>Postbank/FYRST Bank, Berlin</BANKNAME>
+            </EMPFAENGER>
+            <ZWECK>Manuelle Splitbuchung</ZWECK>
+            <BETRAG>-6,00</BETRAG>
+            <WAEHRUNG>EUR</WAEHRUNG>
+            <QUELLE>0</QUELLE>
+            <SPLITT>
+                <PART>
+                    <ZWECK>Zweck #1</ZWECK>
+                    <BETRAG>-1,00</BETRAG>
+                    <KATEGORIE>Bewirtung</KATEGORIE>
+                </PART>
+                <PART>
+                    <ZWECK>Zweck #2</ZWECK>
+                    <BETRAG>-2,00</BETRAG>
+                    <KATEGORIE>Auto:Benzin</KATEGORIE>
+                </PART>
+                <PART>
+                    <ZWECK>Zweck #3</ZWECK>
+                    <BETRAG>-3,00</BETRAG>
+                    <KATEGORIE>Leasing</KATEGORIE>
+                </PART>
+            </SPLITT>
+        </BUCHUNG>
+        <BUCHUNG>
+            <DATUM>07.03.24</DATUM>
+            <EMPFAENGER>
+                <NAME>Split Empfänger</NAME>
+                <ZUSATZ>Zusatz 2</ZUSATZ>
+                <BIC>PBNKDEFF</BIC>
+                <IBAN>DE02100100100006820101</IBAN>
+                <BANKNAME>Postbank/FYRST Bank, Berlin</BANKNAME>
+            </EMPFAENGER>
+            <ZWECK>Manuelle Splitbuchung mit CSV-Steuerzeichen</ZWECK>
+            <BETRAG>-15,00</BETRAG>
+            <WAEHRUNG>EUR</WAEHRUNG>
+            <QUELLE>0</QUELLE>
+            <SPLITT>
+                <PART>
+                    <ZWECK>Zweck #1 BEGIN ohne Steuerzeichen ENDE</ZWECK>
+                    <BETRAG>-4,00</BETRAG>
+                    <KATEGORIE>Bewirtung</KATEGORIE>
+                </PART>
+                <PART>
+                    <ZWECK>Zweck #2 BEGIN mit zusätzlichem Strichpunkt; vor dem Komma, ENDE</ZWECK>
+                    <BETRAG>-5,00</BETRAG>
+                    <KATEGORIE>Auto:Benzin</KATEGORIE>
+                </PART>
+                <PART>
+                    <ZWECK>Zweck #3 BEGIN mit &lt;HTML&gt;-Tag ENDE</ZWECK>
+                    <BETRAG>-6,00</BETRAG>
+                    <KATEGORIE>Leasing</KATEGORIE>
+                </PART>
+            </SPLITT>
+        </BUCHUNG>
+    </KONTOBUCH>
+</KONTO>
